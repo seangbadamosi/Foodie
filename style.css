@@ -13,6 +13,11 @@
     display: flex;
 }
 
+.d-flexs{
+    display: flex;
+    flex-direction: row;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -135,4 +140,80 @@
 
 .pd-1{
     padding: 0 1vw;
+}
+
+
+  .card {
+    width: 22rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+  } 
+
+  .card img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+  }
+
+    .avatar {
+    width: 75px !important;
+    height: 75px !important;
+    border-radius: 50%; /* THIS makes it a circle */
+    object-fit: cover;  /* prevents stretching */
+    margin-bottom: 15px; /* optional border */
+  }
+
+  .flex2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0 0 0;
+  }
+
+.position-r{
+    position: relative;
+}
+
+.position-a{
+    position: absolute;
+    top: 580px;
+    right: 35vw;
+}
+
+.border-1{
+    width: 70px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 19px;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 5px 0.5px;
+    margin: -40px 0 10px 90px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
 }
