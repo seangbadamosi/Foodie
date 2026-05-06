@@ -509,3 +509,97 @@ main {
 	align-items: center;
 	column-gap: 24px;
 }
+
+.mt-1 {
+	margin: 40vh 0 0 0;
+}
+
+.center {
+	text-align: center;
+}
+
+/*  */
+.faq-container {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.faq-card {
+	background: #fff;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow like your image */
+	overflow: hidden;
+	border: 1px solid #f0f0f0;
+}
+
+.faq-header {
+	width: 100%;
+	padding: 20px;
+	background: none;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+}
+
+/* --- THE ICON LOGIC --- */
+.icon {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Horizontal bar (always there) */
+.icon::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 2px;
+	background-color: #ff6b00; /* Orange color from your screenshot */
+	border-radius: 2px;
+}
+
+/* Vertical bar (hidden when active to make a minus) */
+.icon::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 14px;
+	background-color: #ff6b00;
+	border-radius: 2px;
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
+}
+
+/* When active, rotate/hide the vertical bar to show a minus */
+.faq-card.active .icon::after {
+	transform: rotate(90px);
+	opacity: 0;
+}
+
+/* --- BODY SLIDE --- */
+.faq-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+}
+
+.faq-content {
+	padding: 0 20px 20px 20px;
+	color: #777;
+	font-size: 14px;
+	line-height: 1.6;
+}
