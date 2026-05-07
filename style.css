@@ -15,7 +15,7 @@
 }
 
 .container {
-	max-width: 1500px;
+	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -602,4 +602,77 @@ main {
 	color: #777;
 	font-size: 14px;
 	line-height: 1.6;
+}
+
+.btn-black {
+	background-color: #000;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.font-sm {
+	font-size: 0.2rem;
+}
+
+.font-bg {
+	font-size: 1rem;
+}
+
+.gap-1 {
+	column-gap: 20px;
+}
+
+.cus-img {
+	/* width: 85vw !important;
+	height: 20vh !important; */
+	background-image: url(./img/img1.webp);
+}
+
+.img-1 {
+	background-position: center;
+}
+
+.hero-section {
+	/* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+	background-image: url("./img/img2.avif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50vh;
+	border-radius: 20px;
+}
+
+.norm-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.related-styles {
+	height: 50vh;
+	flex-direction: column;
+	gap: 5vh;
+}
+
+.input-field {
+	width: 40vw;
+	height: 7vh;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+}
+
+.btn-orange1 {
+	background-color: #ff8c00;
+	color: white;
+	border: 2px solid #ff8c00;
+	transition: all 0.3s ease;
+	height: 7vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input::placeholder {
+	text-align: center !important;
 }
