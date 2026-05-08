@@ -255,7 +255,7 @@ header {
 }
 
 main {
-	margin: 0 0 100vh 0;
+	margin: 0 0 10vh 0;
 }
 
 .display-1 {
@@ -675,4 +675,57 @@ main {
 
 input::placeholder {
 	text-align: center !important;
+}
+
+.blue-bg {
+	background-color: rgb(214, 239, 239);
+}
+
+footer {
+	margin: 0 0 0vh 0;
+}
+
+.col6 {
+	width: 60%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	column-gap: 2vw;
+}
+
+.col4 {
+	width: 40%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.text-trans {
+	text-transform: capitalize;
+}
+
+.grid-rows {
+	column-gap: 15vw;
+}
+
+.text-dec {
+	text-decoration: none;
+	color: #000;
+}
+
+.flex-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-flex-2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 60vw;
+}
+
+section.blue-bg {
+	height: 40vh;
 }
