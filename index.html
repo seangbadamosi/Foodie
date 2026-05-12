@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
 		<title>Foodie</title>
 		<style>
@@ -12,7 +13,8 @@
 	</head>
 	<body>
 		<header class="">
-			<nav class="custom-nav">
+			<!-- navbar for large screens -->
+			<nav class="custom-nav hide-on-small-screens">
 				<div class="container d-flex justify-between align-center">
 					<div class="logo">
 						<h2 class="orange-text">Foodie</h2>
@@ -29,6 +31,21 @@
 					</div>
 				</div>
 			</nav>
+
+			<!-- sidenav -->
+	<nav class="hide-on-large-screens navs">
+		<ul id="slide-out" class="sidenav">
+    		<li><a href="#!" class=""><i class="fa-solid fa-bars" style="color: #ff8c00;"></i>menu</a></li>
+    		<li><a href="#!" class=""><i class="fa-solid fa-motorcycle" style="color: #ff8c00;"></i>for riders</a></li>
+    		<li><a href="#!" class=""><i class="fa-solid fa-user" style="color: #ff8c00;"></i></i>About Us</a></li>
+    		<li><a href="#!" class=""><i class="fa-solid fa-comment" style="color: #ff8c00;"></i>Reviews</a></li>
+    		<li><a href="#!" class=""><i class="fa-solid fa-bowl-food" style="color: #ff8c00;"></i></i>Restaurants</a></li>
+  		</ul>
+  		<div class="">
+	  		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
 			<section class="container">
 				<div class="row">
 					<!-- LEFT (col-6) -->
