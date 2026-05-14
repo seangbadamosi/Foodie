@@ -17,10 +17,10 @@
 	/* outline: 1px solid red !important;*/
 }
 
-/* body {
+body {
 	overflow-x: hidden;
 	width: 100%;
-} */
+}
 
 .container {
 	max-width: 1300px;
@@ -51,7 +51,7 @@
 }
 
 .gap-20 {
-	gap: 50px;
+	gap: 30px;
 }
 
 .custom-nav {
@@ -89,7 +89,8 @@
 	color: white;
 	border: 2px solid #ff8c00;
 	transition: all 0.3s ease;
-	width: 10.6vw;
+	padding: 10px 25px;
+	min-width: 140px;
 	text-align: center;
 }
 
@@ -105,7 +106,8 @@
 	color: #ff8c00;
 	border: 2px solid #ff8c00;
 	transition: all 0.3s ease;
-	width: 10.6vw;
+	padding: 10px 25px;
+	min-width: 140px;
 	text-align: center;
 }
 
@@ -145,7 +147,8 @@
 }
 
 .input-design {
-	width: 30vw;
+	width: 100%;
+	max-width: 400px;
 	height: 5vh;
 	border-radius: 10px;
 	border-width: 0.1px;
@@ -169,7 +172,7 @@
 	transition: 0.3s;
 }
 
-.card img {
+.card > img {
 	width: 100%;
 	height: auto;
 	margin: 0 0 0 10px;
@@ -206,14 +209,18 @@
 	padding: 10px 0 0 0;
 }
 
+.position-relative {
+	position: relative;
+}
+
 .position-r {
 	position: relative;
 }
 
 .position-a {
 	position: absolute;
-	bottom: 90px;
-	left: 600px;
+	bottom: 20px;
+	left: 20px;
 }
 
 .border-1 {
@@ -446,13 +453,13 @@ main {
 .position-a1 {
 	position: absolute;
 	bottom: -290vh;
-	left: 600px;
+	right: 20px;
 }
 
 .position-a2 {
 	position: absolute;
 	bottom: -340vh;
-	left: 600px;
+	right: 20px;
 }
 
 .card-1 {
@@ -691,7 +698,7 @@ input::placeholder {
 	background-color: rgb(214, 239, 239);
 }
 
-section .blue-bg {
+section.blue-bg {
 	padding: 50px 0;
 }
 
@@ -728,7 +735,7 @@ section .blue-bg {
 .grid-rows {
 	display: flex;
 	/* flex-wrap: wrap; */
-	gap: 40px;
+	gap: 20%;
 	flex-direction: row;
 }
 
@@ -939,21 +946,46 @@ i:hover {
 		flex-direction: column;
 	}
 
+	.input-design {
+		width: 100%;
+	}
+
 	.i-pad {
 		padding: 16px 0;
 	}
 
 	.footer-links {
 		grid-template-columns: 1fr 1fr;
+		width: 100%;
 	}
 
 	.custom-flex-2 {
-		gap: 55vw;
+		gap: 15px;
+	}
+
+	.position-a {
+		display: none;
 	}
 
 	.col4,
-	.col8 {
+	.col8,
+	.col-6 {
 		width: 100%;
+	}
+
+	.grid-rows {
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+
+@media (max-width: 768) {
+	.display-1 {
+		font-size: 3rem;
+	}
+
+	.display-2 {
+		font-size: 2.5rem;
 	}
 }
 
@@ -964,7 +996,8 @@ i:hover {
 
 	.custom-flex-2 {
 		flex-direction: column;
-		justify-content: left;
-		gap: 1vw;
+		align-items: start;
+		gap: 15px;
+		margin: 0 0 0 12px;
 	}
 }
