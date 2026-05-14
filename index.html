@@ -72,7 +72,7 @@
 					<div class="col-6 position-relative">
 						<img src="./img/man-putting-sunglasses.jpg" class="img-main" />
 
-						<div class="card position-a">
+						<div class="card position-a hide-on-small-screens">
 							<div class="flex2">
 								<img src="./img/img1.webp" class="avatar" />
 								<h5 class="card-title">Seafood Noodles</h5>
@@ -134,18 +134,12 @@
 					</div>
 				</div>
 				<div
-					class="mb-1"
-					style="
-						display: flex;
-						justify-content: space-around;
-						align-items: center;
-						column-gap: 105px;
-					"
+					class="mb-1 row"
 				>
-					<div class="">
-						<img src="./img/img1.webp" alt="" />
+					<div class="col-6">
+						<img src="./img/img1.webp" width="100%" class="" alt="" />
 					</div>
-					<div class="">
+					<div class="col-6">
 						<h1 class="orange-text mb-3">Our Popular Restaurants</h1>
 						<h1 class="display-1 mb-3" style="font-weight: 700">1000+</h1>
 						<h4 class="display-6 mb-3">Our Delicious Food</h4>
@@ -324,9 +318,9 @@
 					</div>
 					<div class="col-6">
 						<div class="position-r">
-							<img src="./img/img1.webp" alt="placeholder img" />
+							<img src="./img/img1.webp" width="100%" alt="placeholder img" />
 						</div>
-						<div class="card-1 position-a1">
+						<div class="card-1 position-a1 hide-on-small-screens">
 							<div class="card-body">
 								<div class="custom-flex-1 mb-3">
 									<img
@@ -349,7 +343,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="card-2 position-a2">
+						<div class="card-2 position-a2 hide-on-small-screens">
 							<div class="card-body">
 								<div class="custom-flex-1 mb-3">
 									<div class="">
@@ -447,8 +441,9 @@
 							<h4 class="display-3 bold mb-2">Download the foodie <br> App</h4>
 							<h2 class="mb-2">Download the Phathao App and order your food online to get the fastest delivery</h2>
 							<div class="d-flex gap-1">
-								<a href="" class="btn btn-black font-sm">Download on the <br><span class="font-bg">App Store</span></a>
-								<a href="" class="btn btn-black font-sm">GET IT ON <br><span class="font-bg">Google Play</span></a>
+								<a href="" style="display: flex;justify-content: center; align-items: center; gap: 10px;" class="btn btn-black font-sm"><i class="fa-brands fa-google-play fa-2xl"></i>
+								Download on the <br> APP STORE</a>
+								<a href="" class="btn btn-black font-sm">GET IT ON <br><span class="font-bg"><i class="fa-brands fa-google-play fa-lg"></i>Google Play</span></a>
 							</div>
 						</div>
 					</div>
@@ -468,55 +463,71 @@
 
 			</section>
 		</main>
-		<footer class="">
-			<section class=" blue-bg">
+		<footer>
+			<section class=" blue-bg " >
 				<div class="container">
-					<div class="d-flex grid-rows mb-1">
+					<div class="d-flex-1 grid-rows">
 						<div class="col4">
 							<h3 class="display-6 orange-text bold ">Foodie</h3>
 							<p class="mb-3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Minus, dicta?</p>
-							<i class="fa-brands fa-facebook-f fa-xl"></i>
-							<i class="fa-brands fa-square-twitter fa-xl" style="color: #ff8c00;"></i>
-							<i class="fa-brands fa-instagram fa-xl"></i>
-							<i class="fa-brands fa-linkedin-in fa-xl"></i>
+								<a href="" class="text-dec i-pad">
+									<i class="fa-brands fa-facebook-f fa-xl"></i>
+								</a>
+								<a href="" class="text-dec i-pad">
+									<i class="fa-brands fa-square-twitter fa-xl"></i>
+								</a>
+								<a href="" class="text-dec i-pad">
+									<i class="fa-brands fa-instagram fa-xl"></i>
+								</a>
+								<a href="" class="text-dec i-pad">
+									<i class="fa-brands fa-linkedin-in fa-xl"></i>
+								</a>	
 						</div>
-						<div class="col6">
-							<div class="">
+						<div class="col8 footer-links">
+							<div >
 								<h4>Support</h4>
 								<a href="" class="text-trans text-dec">account</a><br>
 								<a href="" class="text-trans text-dec">support center</a><br>
-								<a href="" class="text-trans text-dec">feedback</a>
-								<a href="" class="text-trans text-dec">accessibility</a>
+								<a href="" class="text-trans text-dec">feedback</a><br>
+								<a href="" class="text-trans text-dec">accessibility</a><br>
 							</div>
-							<div class="">
+							<div >
 								<h4>Our Menu</h4>
-								<a href="" class="text-trans text-dec">special</a>
-								<a href="" class="text-trans text-dec">popular</a>
-								<a href="" class="text-trans text-dec">categories</a>
+								<a href="" class="text-trans text-dec">special</a><br>
+								<a href="" class="text-trans text-dec">popular</a><br>
+								<a href="" class="text-trans text-dec">categories</a><br>
 							</div>
-							<div class="">
+							<div >
 								<h4>Useful Link</h4>
-								<a href="" class="text-trans text-dec">payment & tax</a>
-								<a href="" class="text-trans text-dec">terms of service</a>
-								<a href="" class="text-trans text-dec">privacy policy</a>
-								<a href="" class="text-trans text-dec">about us</a>
+								<a href="" class="text-trans text-dec">payment & tax</a><br>
+								<a href="" class="text-trans text-dec">terms of service</a><br>
+								<a href="" class="text-trans text-dec">privacy policy</a><br>
+								<a href="" class="text-trans text-dec">about us</a><br>
 							</div>
-							<div class="">
+							<div >
 								<h4>Get in Touch</h4>
-								<a href="" class="text-dec">seangbadamosi@gmail.com</a>
-								<a href="" class="text-trans text-dec">08083308461</a>
+								<a class="text-dec" href="mailto:seangbadamosi@gmail.com">seangbadamosi@gmail.com</a><br>
+								<a href="tel:08083308461" class="text-trans text-dec">08083308461</a>
 							</div>
 						</div>
 					</div>
-					<div class="custom-flex-2">
-						<div class="">
+					<div class="custom-flex-2" style="padding: 30px 0 0 0 ;">
+						<div >
 							<span>©2026 sean gbadamosi</span>
 						</div>
-						<div class="">
-							<i class="fa-brands fa-cc-visa"></i>
-							<i class="fa-brands fa-cc-paypal"></i>
-							<i class="fa-brands fa-cc-visa"></i>
-							<i class="fa-brands fa-cc-mastercard"></i>
+						<div class="d-inline">
+							<a href=" " class="text-dec">
+								<i class="fa-brands fa-cc-visa"></i>
+							</a>
+							<a href=" " class="text-dec">
+								<i class="fa-brands fa-cc-paypal"></i>
+							</a>
+							<a href=" " class="text-dec">
+								<i class="fa-brands fa-cc-visa"></i>
+							</a>
+							<a href=" " class="text-dec">
+								<i class="fa-brands fa-cc-mastercard"></i>
+							</a>
 						</div>
 					</div>
 				</div>
