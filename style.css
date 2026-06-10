@@ -25,13 +25,8 @@ body {
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 40px;
 }
-
-/* .d-flex-1 {
-	flex-wrap: wrap;
-	gap: 30px;
-} */
 
 .d-flex {
 	display: flex;
@@ -76,6 +71,7 @@ body {
 }
 
 .btn {
+	max-width: 400px;
 	display: inline-block;
 	padding: 10px 25px;
 	border-radius: 5px;
@@ -90,7 +86,7 @@ body {
 	border: 2px solid #ff8c00;
 	transition: all 0.3s ease;
 	padding: 10px 25px;
-	min-width: 140px;
+	max-width: 400px;
 	text-align: center;
 }
 
@@ -149,10 +145,11 @@ body {
 .input-design {
 	width: 100%;
 	max-width: 400px;
-	height: 5vh;
-	border-radius: 10px;
+	height: 6vh;
+	border-radius: 5px;
 	border-width: 0.1px;
 	outline: none;
+	border: 0.1px solid black;
 }
 
 .orange-text {
@@ -368,7 +365,7 @@ main {
 
 .flex4 {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: stretch;
 	flex-wrap: wrap;
 	/* flex-direction: row; */
@@ -406,9 +403,19 @@ main {
 	box-sizing: border-box;
 }
 
+.cust-col-6 {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.pad-rt {
+	padding-right: 120px;
+}
+
 .img-main {
 	width: 100%;
 	height: auto;
+	margin: 10% 0 0 0;
 }
 
 .custom-flex {
@@ -678,6 +685,7 @@ main {
 	background-repeat: no-repeat;
 	height: 50vh;
 	border-radius: 20px;
+	margin: 0 5%;
 }
 
 .norm-flex {
@@ -705,10 +713,12 @@ main {
 	color: white;
 	border: 2px solid #ff8c00;
 	transition: all 0.3s ease;
-	height: 7vh;
+	max-height: 35px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 20%;
+	max-width: 30%;
 }
 
 input::placeholder {
@@ -739,13 +749,13 @@ section.blue-bg {
 
 .col8 {
 	width: 80%;
-	padding: 20px;
+	/* padding: 20px; */
 	box-sizing: border-box;
 }
 
 .col4 {
 	width: 40%;
-	padding: 20px;
+	/* padding: 20px; */
 	box-sizing: border-box;
 }
 
@@ -772,11 +782,11 @@ section.blue-bg {
 }
 
 .custom-flex-2 {
+	margin: 3% 0 0 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 20px;
 }
 
 .d-inline > a {
@@ -967,8 +977,17 @@ i:hover {
 		flex-direction: column;
 	}
 
-	.input-design {
+	.input-design,
+	.btn,
+	.btn-orange-bg {
 		width: 100%;
+	}
+
+	.pd-1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 400px;
 	}
 
 	.i-pad {
@@ -981,7 +1000,9 @@ i:hover {
 	}
 
 	.custom-flex-2 {
-		gap: 15px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
 	}
 
 	.position-a {
@@ -992,15 +1013,29 @@ i:hover {
 		max-width: 320px;
 	}
 
+	.custom-btn-1,
+	.custom-btn-2 {
+		width: 100%;
+		font-size: 3px;
+	}
+
 	.col4,
 	.col8,
-	.col-6 {
+	.col-6,
+	.cust-col-6 {
 		width: 100%;
 	}
 
 	.grid-rows {
 		flex-direction: column;
 		gap: 30px;
+	}
+
+	.btn-orange1 {
+		font-size: 13px;
+		max-width: 20%;
+		max-height: 60%;
+		font-weight: 100;
 	}
 }
 
@@ -1067,9 +1102,6 @@ i:hover {
 	}
 
 	.custom-flex-2 {
-		flex-direction: column;
-		align-items: start;
-		gap: 15px;
-		margin: 0 0 0 12px;
+		grid-template-columns: 1fr;
 	}
 }
