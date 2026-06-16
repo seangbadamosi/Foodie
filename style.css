@@ -212,8 +212,8 @@ body {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	column-gap: 20px;
-	padding: 10px 0 0 0;
+	column-gap: 30px;
+	padding: 10px 2px 2px 2px;
 }
 
 .position-relative {
@@ -451,9 +451,10 @@ main {
 	text-transform: uppercase;
 }
 
-.orange-bg {
-	background-color: #ff8c00;
-}
+/* i > h5 {
+	display: flex;
+	justify-content: center;
+} */
 
 .white-txt {
 	color: #fff;
