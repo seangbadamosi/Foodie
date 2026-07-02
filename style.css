@@ -1,25 +1,26 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family:
-		system-ui,
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Oxygen,
-		Ubuntu,
-		Cantarell,
-		"Open Sans",
-		"Helvetica Neue",
-		sans-serif;
 	box-sizing: border-box;
-	/* outline: 1px solid red !important;*/
 }
 
 body {
 	overflow-x: hidden;
 	width: 100%;
+	font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.cursive-text {
+	font-family: "Cedarville Cursive", cursive;
 }
 
 .container {
@@ -52,7 +53,7 @@ body {
 .custom-nav {
 	padding: 15px 0;
 	background-color: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .orange-text {
@@ -124,12 +125,12 @@ body {
 }
 
 .display1 {
-	margin: 20vh 0 0 0;
+	margin: 8px 0 0 0;
 	font-weight: 700 !important;
 }
 
 .display2 {
-	margin: 0 0 5vh 0;
+	margin: 0 0 8px 0;
 	font-weight: 100 !important;
 }
 
@@ -139,7 +140,7 @@ body {
 }
 
 .p-design {
-	margin-bottom: 5vh;
+	margin-bottom: 8px;
 }
 
 .input-design {
@@ -283,11 +284,11 @@ header {
 }
 
 .mb-1 {
-	margin: 0 0 10vh 0;
+	/* margin: 0 0 32px 0;  */
 }
 
 .mb-4 {
-	margin: 0 0 1vh 0;
+	margin: 0 0 8px 0;
 }
 
 main {
@@ -297,7 +298,7 @@ main {
 .display-1 {
 	font-size: 5rem;
 	font-weight: 300;
-	line-height: 1.1;
+	line-height: 1.05;
 }
 
 .display-2 {
@@ -309,7 +310,7 @@ main {
 .display-3 {
 	font-size: 4rem;
 	font-weight: 300;
-	line-height: 1.1;
+	line-height: 1.15;
 }
 
 .display-4 {
@@ -321,21 +322,21 @@ main {
 .display-5 {
 	font-size: 3rem;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.25;
 }
 
 .display-6 {
 	font-size: 2.5rem;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.6;
 }
 
 .mb-2 {
-	margin: 0 0 5vh 0;
+	margin: 0 0 48px 0;
 }
 
 .mb-3 {
-	margin: 0 0 2vh 0;
+	margin: 0 0 24px 0;
 }
 
 .text {
@@ -348,7 +349,6 @@ main {
 
 .customized-txt1 {
 	font-size: 1.7rem;
-	font-weight: 100;
 }
 .bold {
 	font-weight: 600;
@@ -403,7 +403,6 @@ main {
 
 .col-6 {
 	width: 50%;
-	padding: 20px;
 	box-sizing: border-box;
 }
 
@@ -413,7 +412,11 @@ main {
 }
 
 .pad-rt {
-	padding-right: 120px !important;
+	padding: 0 50px 0 0 !important;
+}
+
+.pad-rt1 {
+	padding: 0 50px 0 0;
 }
 
 .img-main {
@@ -567,7 +570,7 @@ main {
 }
 
 .mt-1 {
-	margin: 40vh 0 0 0;
+	margin: 48px 0 0 0;
 }
 
 .center {
@@ -896,7 +899,7 @@ footer a {
 }
 
 .marg {
-	margin: -100px 0 0 0;
+	margin: 48px 0 0 0;
 }
 
 /* ===== LINKS ===== */
@@ -1100,7 +1103,7 @@ i:hover {
 	}
 
 	.display-4 {
-		font-size: 2.5rem !important;
+		font-size: 1.5rem !important;
 	}
 
 	.flex4 {
