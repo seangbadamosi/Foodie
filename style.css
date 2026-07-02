@@ -320,22 +320,6 @@ header {
 	cursor: pointer;
 }
 
-.mb-1 {
-	margin: 0 0 8px 0;
-}
-
-.mb-2 {
-	margin: 0 0 16px 0;
-}
-
-.mb-3 {
-	margin: 0 0 32px 0;
-}
-
-.mb-4 {
-	margin: 0 0 48px 0;
-}
-
 main {
 	margin: 0 0 10vh 0;
 }
@@ -942,6 +926,26 @@ footer a {
 
 .marg {
 	margin: 208px 0 0 0;
+}
+
+.mb-1 {
+	margin: 0 0 8px 0;
+}
+
+.mb-2 {
+	margin: 0 0 16px 0;
+}
+
+.mb-3 {
+	margin: 0 0 32px 0;
+}
+
+.mb-4 {
+	margin: 0 0 48px 0;
+}
+
+.mb-5 {
+	margin: 0 0 56px 0;
 }
 
 /* ===== LINKS ===== */
