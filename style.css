@@ -595,6 +595,8 @@ main {
 }
 
 .center {
+	/* display: flex;
+	justify-content: center; */
 	text-align: center;
 }
 
@@ -926,6 +928,10 @@ footer a {
 
 .marg {
 	margin: 208px 0 0 0;
+}
+
+.mt-1 {
+	margin: 50px 0 0 0;
 }
 
 .mb-1 {
