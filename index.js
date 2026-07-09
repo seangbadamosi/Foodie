@@ -5,7 +5,7 @@ document.querySelectorAll(".faq-header").forEach((button) => {
 		const body = card.querySelector(".faq-body");
 
 		// Toggle Active Class
-		const isOpen = card.classList.contains("active");
+		const isOpen = card.classList.contains("");
 
 		// Close all other cards (optional, remove if you want multiple open)
 		document.querySelectorAll(".faq-card").forEach((otherCard) => {
@@ -41,4 +41,38 @@ trigger.addEventListener("click", (e) => {
 overlay.addEventListener("click", () => {
 	sidenav.classList.remove("active");
 	overlay.classList.remove("active");
+});
+
+// for zooming image
+// const image = document.querySelector(".food-img");
+// const lightbox = document.querySelector(".lightbox");
+
+// image.addEventListener("click", () => {
+// 	lightbox.classList.add("active");
+// });
+
+// lightbox.addEventListener("click", () => {
+// 	lightbox.classList.remove("active");
+// });
+
+// document.addEventListener("keydown", (e) => {
+// 	if (e.key === "Escape") {
+// 		lightbox.classList.remove("active");
+// 	}
+// });
+
+// for zooming images
+const images = document.querySelectorAll(".zoomable");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+
+images.forEach((image) => {
+	image.addEventListener("click", () => {
+		lightboxImg.src = image.src;
+		lightbox.classList.add("active");
+	});
+});
+
+lightbox.addEventListener("click", () => {
+	lightbox.classList.remove("active");
 });
