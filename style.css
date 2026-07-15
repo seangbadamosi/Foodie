@@ -61,6 +61,13 @@ h6 {
 	z-index: 10;
 }
 
+.flex-4 {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 100%;
+}
+
 .d-flex {
 	display: flex;
 }
@@ -305,7 +312,7 @@ h6 {
 }
 
 header {
-	margin: 0 0 30vh 0;
+	margin: 0 0 10vh 0;
 }
 
 .flex3 {
@@ -472,11 +479,13 @@ main {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .col-6 {
-	width: 50%;
-	box-sizing: border-box;
+	flex: 1 1 calc(50% - 10px);
+	/* width: 50%; */
+	/* box-sizing: border-box; */
 }
 
 .cust-col-6 {
@@ -772,7 +781,7 @@ main {
 	background-repeat: no-repeat;
 	height: 50vh;
 	border-radius: 20px;
-	margin: 0 5%;
+	margin: 0 auto;
 }
 
 .norm-flex {
@@ -789,7 +798,7 @@ main {
 
 .input-field {
 	width: 40vw;
-	height: 7vh;
+	height: 4rem;
 	border-radius: 10px;
 	outline: none;
 	border: none;
@@ -798,6 +807,7 @@ main {
 
 .input-field::placeholder {
 	text-align: left !important;
+	font-size: 1rem;
 	margin: 0 -30px 0 0;
 }
 
@@ -805,16 +815,20 @@ main {
 	text-align: left;
 	padding: 0 0 0 10px;
 }
+
 .btn-orange1 {
 	background-color: #f97316;
 	color: white;
-	border: 2px solid #f97316;
+	border: none;
+	font-size: 1.5rem;
 	transition: all 0.3s ease;
-	max-height: 45px;
+	max-width: 250px;
+	min-width: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20%;
+	height: 4rem;
+	width: 100%;
 	max-width: 30%;
 }
 
@@ -927,6 +941,11 @@ section.blue-bg {
 	z-index: 1000;
 	overflow-y: auto;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex-6 {
+	display: flex;
+	align-items: center;
 }
 
 /* ACTIVE SIDENAV */
@@ -1044,7 +1063,7 @@ footer a {
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.3s;
-	z-index: 900;
+	z-index: 2;
 }
 
 .overlay.active {
@@ -1106,8 +1125,28 @@ i:hover {
 		display: none;
 	}
 
+	.unique-img-1 {
+		width: 100vw !important;
+	}
+
 	.grid-rows {
 		flex-direction: column;
+	}
+
+	.btn-orange1 {
+		width: 100%; /* Spans full width of container on small mobile screens */
+		max-width: none; /* Removes maximum width cap */
+		font-size: 1.1rem; /* Slightly larger text size for touch accessibility */
+		padding: 1rem;
+		height: 2rem;
+	}
+
+	.input-field::placeholder {
+		font-size: 0.6rem;
+	}
+
+	.input-field {
+		height: 2rem;
 	}
 
 	.input-design,
@@ -1169,10 +1208,14 @@ i:hover {
 	}
 
 	.btn-orange1 {
-		font-size: 13px;
-		max-width: 20%;
-		max-height: 90%;
-		font-weight: 100;
+		width: 20%; /* Spans full width of container on small mobile screens */
+		max-width: none; /* Removes maximum width cap */
+		font-size: 0.5rem; /* Slightly larger text size for touch accessibility */
+		padding: 1rem;
+	}
+
+	.input-field::placeholder {
+		font-size: 0.25rem;
 	}
 
 	.card-b {
